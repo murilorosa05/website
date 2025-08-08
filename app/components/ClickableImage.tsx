@@ -1,5 +1,4 @@
-// app/components/ClickableImage.tsx
-'use client' // 👈 Isso marca o componente como Client Component
+'use client' 
 
 import { useState } from 'react'
 import Image from 'next/image'
@@ -8,7 +7,7 @@ export function ClickableImage() {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('Murilo Rosa - Desenvolvedor')
+    navigator.clipboard.writeText('054b7fcd-58a0-4225-8f67-8fa64206f3ad') //texto q vai copiar
       .then(() => {
         setCopied(true)
         setTimeout(() => setCopied(false), 2000)
@@ -31,7 +30,7 @@ export function ClickableImage() {
       />
       {copied && (
         <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-white text-sm font-medium">
-          Texto copiado!
+          Chave PIX copiada!
         </div>
       )}
     </div>
