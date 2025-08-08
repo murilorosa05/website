@@ -6,11 +6,12 @@ export default function Page() {
 
   return (
     <section>
+      {/*
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         Murilo Rosa
-      </h1>
+      </h1> */}
       <p className="mb-4">
-        {`Opa.`}
+        {`Faz um PIX ⬇️⬇️`}
       </p>
 
       <ClickableImage />
