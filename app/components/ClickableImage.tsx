@@ -16,7 +16,8 @@ export function ClickableImage() {
 
   return (
     <div 
-      className="relative w-full h-full mb-6 shadow-md cursor-pointer hover:shadow-lg transition-shadow"
+//      className="relative w-full h-full mb-6 shadow-md cursor-pointer hover:shadow-lg transition-shadow"
+      className="relative w-full max-w-sm aspect-square mb-6 shadow-md cursor-pointer hover:shadow-lg transition-shadow"  
       onClick={handleCopy}
       title="Clique para copiar"
     >
