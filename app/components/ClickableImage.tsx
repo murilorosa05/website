@@ -25,7 +25,8 @@ export function ClickableImage() {
         src="/images/qrcode.png"
         alt="QRCode Pix"
         fill
-        className="object-cover"
+        className="object-cover rounded-lg"
+        //className="object-cover"
         quality={90}
         priority
       />
