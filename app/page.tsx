@@ -10,7 +10,19 @@ export default function Page() {
       <p className="mb-4">
         {`Opa.`}
       </p>
-      <div className="mb-8 overflow-hidden rounded-xl shadow-lg transition-all hover:shadow-xl">
+      <div className="w-full aspect-video md:aspect-[16/9] mb-8 rounded-lg overflow-hidden shadow-md">
+        <Image
+          src="/images/qrcode.jpg"
+          alt="QRCode Pix"
+          fill // Preenche o container pai mantendo aspect-ratio
+          className="object-cover object-center"
+          sizes="(max-width: 768px) 100vw, 50vw" // Tamanhos responsivos
+          quality={85} // Qualidade balanceada
+          priority
+        />
+      </div>
+      
+{/*      <div className="mb-8 overflow-hidden rounded-xl shadow-lg transition-all hover:shadow-xl">
         <Image
           src="/images/qrcode.png" // Caminho relativo a public/images/
           alt="Foto do Murilo Rosa"
@@ -21,7 +33,7 @@ export default function Page() {
         />
       </div>
       
-{/*      <div className="my-8">
+     <div className="my-8">
         <BlogPosts />
       </div> */}
     </section>
