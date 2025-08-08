@@ -1,3 +1,4 @@
+{/*
 import { BlogPosts } from 'app/components/posts'
 
 export const metadata = {
@@ -13,3 +14,4 @@ export default function Page() {
     </section>
   )
 }
+*/}
