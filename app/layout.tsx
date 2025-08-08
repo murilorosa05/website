@@ -7,12 +7,17 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
-<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: 'Murilo Rosa',
     template: 'Murilo Rosa',
+  },
+  icons: { 
+    icon: '/favicon.svg', 
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
   description: 'Murilo Rosa.',
   openGraph: {
@@ -45,7 +50,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={cx(
         'text-black bg-white dark:text-white dark:bg-black',
         GeistSans.variable,
