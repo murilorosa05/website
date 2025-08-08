@@ -11,16 +11,16 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'Murilo Rosa',
+    template: 'Murilo Rosa',
   },
-  description: 'This is my portfolio.',
+  description: 'Murilo Rosa.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'Murilo Rosa',
+    description: 'Murilo Rosa',
     url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
+    siteName: 'Murilo Rosa',
+    locale: 'pt_BR',
     type: 'website',
   },
   robots: {
