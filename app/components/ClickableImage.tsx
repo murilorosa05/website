@@ -31,7 +31,7 @@ export function ClickableImage() {
         priority
       />
       {copied && (
-        <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center text-white text-sm font-medium">
+        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-sm font-medium">
           Chave PIX copiada!
         </div>
       )}
