@@ -10,14 +10,14 @@ export default function Page() {
       <p className="mb-4">
         {`Opa.`}
       </p>
-      <div className="w-full aspect-video md:aspect-[16/9] mb-8 rounded-lg overflow-hidden shadow-md">
+      <div className="relative w-full h-64 md:h-80 mb-6 rounded-lg overflow-hidden border border-neutral-200 dark:border-neutral-800">
         <Image
           src="/images/qrcode.png"
-          alt="QRCode Pix"
-          fill // Preenche o container pai mantendo aspect-ratio
-          className="object-cover object-center"
-          sizes="(max-width: 400px) 100vw, 50vw" // Tamanhos responsivos
-          quality={85} // Qualidade balanceada
+          alt="Murilo Rosa"
+          fill
+          className="object-cover"
+          sizes="(max-width: 640px) 90vw, 60vw"
+          quality={80}
           priority
         />
       </div>
