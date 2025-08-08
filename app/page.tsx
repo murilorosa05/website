@@ -12,7 +12,7 @@ export default function Page() {
       </p>
       <div className="mb-8 overflow-hidden rounded-xl shadow-lg transition-all hover:shadow-xl">
         <Image
-          src="/images/profile.jpg" // Caminho relativo a public/images/
+          src="/images/qrcode.png" // Caminho relativo a public/images/
           alt="Foto do Murilo Rosa"
           width={600}  // Largura original da imagem
           height={400} // Altura original da imagem
