@@ -1,7 +1,19 @@
 import { BlogPosts } from 'app/components/posts'
 import Image from 'next/image'
+import { useState } from 'react'
 
 export default function Page() {
+
+  const [copied, setCopied] = useState(false)
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('Murilo Rosa - Desenvolvedor')
+      .then(() => {
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+      })
+  }
+
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
@@ -11,15 +23,24 @@ export default function Page() {
         {`Opa.`}
       </p>
 
-      <div className="relative w-48 h-48 mx-auto mb-6 overflow-hidden shadow-md">
+      <div 
+        className="relative w-48 h-48 mx-auto mb-6 shadow-md cursor-pointer hover:shadow-lg transition-shadow"
+        onClick={handleCopy}
+        title="Clique para copiar"
+      >
         <Image
           src="/images/qrcode.png"
-          alt="QRCode Pix"
+          alt="Foto do Murilo Rosa"
           fill
           className="object-cover"
           quality={90}
           priority
         />
+        {copied && (
+          <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-white text-sm font-medium">
+            Texto copiado!
+          </div>
+        )}
       </div>
 
 
