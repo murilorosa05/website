@@ -12,7 +12,7 @@ export default function Page() {
       </p>
       <div className="w-full aspect-video md:aspect-[16/9] mb-8 rounded-lg overflow-hidden shadow-md">
         <Image
-          src="/images/qrcode.jpg"
+          src="/images/qrcode.png"
           alt="QRCode Pix"
           fill // Preenche o container pai mantendo aspect-ratio
           className="object-cover object-center"
