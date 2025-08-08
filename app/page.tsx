@@ -16,7 +16,7 @@ export default function Page() {
           alt="QRCode Pix"
           fill // Preenche o container pai mantendo aspect-ratio
           className="object-cover object-center"
-          sizes="(max-width: 768px) 100vw, 50vw" // Tamanhos responsivos
+          sizes="(max-width: 400px) 100vw, 50vw" // Tamanhos responsivos
           quality={85} // Qualidade balanceada
           priority
         />
