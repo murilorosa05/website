@@ -10,14 +10,13 @@ export default function Page() {
       <p className="mb-4">
         {`Opa.`}
       </p>
-      <div className="relative w-full h-64 md:h-80 mb-6 rounded-lg overflow-hidden border border-neutral-200 dark:border-neutral-800">
+      <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg dark:border-neutral-800">
         <Image
-          src="/images/qrcode.png"
-          alt="Murilo Rosa"
+          src="/images/qrcode.png"  // Sua imagem quadrada
+          alt="QrCode Pix"
           fill
           className="object-cover"
-          sizes="(max-width: 640px) 90vw, 60vw"
-          quality={80}
+          quality={90}
           priority
         />
       </div>
