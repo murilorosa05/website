@@ -24,13 +24,14 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="/rss"
+            href="https://instagram.com/cristiano"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
+            <p className="ml-2 h-7">instagram</p>
           </a>
         </li>
-        <li>
+
+{/*        <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
@@ -51,7 +52,8 @@ export default function Footer() {
             <ArrowIcon />
             <p className="ml-2 h-7">view source</p>
           </a>
-        </li>
+        </li> */}
+        
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
         © {new Date().getFullYear()} 
