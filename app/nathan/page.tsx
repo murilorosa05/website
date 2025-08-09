@@ -1,5 +1,3 @@
-// app/nathan/page.tsx
-
 'use client'
 
 import { useState } from 'react'
@@ -27,14 +25,16 @@ export default function Page() {
         onClick={handleCopy}
         title="Clique para copiar"
       >
-        <Image
-          src="/images/qrcode-nathan.png"
-          alt="QRCode Pix"
-          fill
-          className="object-cover rounded-lg"
-          quality={100}
-          priority
-        />
+        <div className="bg-white rounded-lg p-2"> {/* Adicionando a div com fundo branco e padding */}
+          <Image
+            src="/images/qrcode-nathan.png"
+            alt="QRCode Pix"
+            fill
+            className="object-cover rounded-lg"
+            quality={100}
+            priority
+          />
+        </div>
         {copied && (
           <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-white text-sm font-medium">
             Chave PIX copiada!
