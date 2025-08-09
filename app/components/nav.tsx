@@ -3,7 +3,7 @@ import Link from 'next/link'
 const navItems = {
   '/': {
     name: 'início',
-  
+  },
 
   /*
   '/blog': {
