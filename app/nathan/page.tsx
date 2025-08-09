@@ -1,18 +1,16 @@
+// app/nathan/page.tsx
+
 'use client'
 
+import { useState } from 'react'
 import Image from 'next/image'
-
-export const metadata = {
-  title: 'Nathan',
-  description: 'Essa é a página do Nathan.',
-}
 
 export default function Page() {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
     navigator.clipboard
-      .writeText('054b7fcd-58a0-4225-8f67-8fa64206f3ad') //texto q vai copiar
+      .writeText('054b7fcd-58a0-4225-8f67-8fa64206f3ad')
       .then(() => {
         setCopied(true)
         setTimeout(() => setCopied(false), 2000)
