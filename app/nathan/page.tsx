@@ -10,7 +10,7 @@ export default function Page() {
 
   const handleCopy = () => {
     navigator.clipboard
-      .writeText('054b7fcd-58a0-4225-8f67-8fa64206f3ad')
+      .writeText('6499479915')
       .then(() => {
         setCopied(true)
         setTimeout(() => setCopied(false), 2000)
@@ -28,7 +28,7 @@ export default function Page() {
         title="Clique para copiar"
       >
         <Image
-          src="/images/qrcode.png"
+          src="/images/qrcode-nathan.png"
           alt="QRCode Pix"
           fill
           className="object-cover rounded-lg"
