@@ -20,7 +20,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
-        Página do Nathan
+        PIX do Nathan
       </h1>
       <div
         className="relative w-full max-w-sm aspect-square mb-6 shadow-md cursor-pointer hover:shadow-lg transition-shadow"
