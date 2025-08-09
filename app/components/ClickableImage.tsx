@@ -27,7 +27,7 @@ export function ClickableImage() {
         fill
         className="object-cover rounded-lg"
         //className="object-cover"
-        quality={90}
+        quality={100}
         priority
       />
       {copied && (
